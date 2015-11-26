@@ -1,0 +1,160 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.google-logo {
+  height: 92px;
+  width: 272px;
+}
+
+/* clearfix */
+
+.container:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* typography */
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 0.8em;
+}
+
+/* header and navigation */
+
+#main-header {
+  padding: 1em 0 1em 0;
+}
+
+#main-nav {
+  display: inline-block;
+  float: right;
+  margin-right: 3em;
+  min-width: 20%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 0.4em 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* main content */
+
+#search-wrapper {
+  padding: 12% 10% 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.google-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+input[name="q"] {
+  border: 1px solid #d9d9d9;
+  font-size: 1em;
+  font-family: arial, sans-serif;
+  padding: 0 20px;
+  height: 3em;
+  width: 40em;
+  margin: 3em 0 3em;
+}
+
+.jsb {
+  text-align: center;
+}
+
+.jsb input[type="submit"] {
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  color: #757575;
+}
+
+.jsb input[type="submit"]:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+/* footer */
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  padding: 0.8% 2% 0.8%;
+  background-color: #f2f2f2;
+}
+
+.site-footer li {
+  padding-right: 1.8em;
+}
+
+.footer-left,
+.footer-right {
+  display: inline-block;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* buttons, etc. */
+
+.btn-login {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #4387fd, #4683ea) repeat scroll 0 0;
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  outline: medium none;
+  color: white;
+  padding: 3% 5% 3%;
+}
+
+.menu-buttons {
+  display: inline;
+}
+
+.grid-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url("../images/grid.png");
+  vertical-align: -50%;
+}
