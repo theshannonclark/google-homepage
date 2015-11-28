@@ -42,7 +42,7 @@ body {
   display: inline-block;
   float: right;
   margin-right: 3em;
-  min-width: 20%;
+  white-space: nowrap;
 }
 
 nav ul {
@@ -88,6 +88,7 @@ input[name="q"] {
 
 .jsb {
   text-align: center;
+  white-space: nowrap;
 }
 
 .jsb input[type="submit"] {
@@ -120,6 +121,7 @@ input[name="q"] {
   width: 100%;
   padding: 0.8% 2% 0.8%;
   background-color: #f2f2f2;
+  min-width: 640px;
 }
 
 .site-footer li {
